@@ -1,0 +1,25 @@
+.menu 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 65px
+    
+    &__list
+        display: flex
+    &__item
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+    &__link
+        font-family: 'OpenSans'
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 1.09091px
+        color: $text
+        transition: 0.3s
+        font-weight: 600
+        &.active
+            color: $blue
+        &:hover
+            color: $blue
+        

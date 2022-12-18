@@ -1,6 +1,9 @@
 .footer
+    &__container
+        display: flex
+        justify-content: space-between
     &__signup
-        background: #171819
+        background: $foot
         width: 100%
         padding: 30px 30px
         display: flex
@@ -15,12 +18,73 @@
         margin-bottom: 0
     &__input
         padding: 10px 98px 10px 16px
+    &__top
+        background: #141A20
+        padding: 40px 0
+        color: $textw
+    &__content
+        width: 250px
+    &__title-content
+        font-size: 11px
+        line-height: 13px
+        letter-spacing: 0.846154px
+        margin-bottom: 20px
+    &__logo
+        margin-bottom: 15px
+    &__subtitle
+        font-size: 11px
+        line-height: 19px
+        letter-spacing: 0.85px
+    &__menu
+        width: 150px
+        display: flex
+        margin-right: 38px
+        justify-content: space-between
+        align-items: center
+        text-transform: uppercase
+        &-faq
+            margin: 0 36px
+        &-blog
+        &-list
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+        &-link
+            font-size: 11px
+            line-height: 25px
+            letter-spacing: 0.846154px
+            color: $textw
+    &__contact
+        width: 160px
+        font-size: 11px
+        line-height: 16px
+        letter-spacing: 0.846154px
+        &-add, &-phone
+            margin-bottom: 20px
+    &__icon
+        color: $textw
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 40px
+    &__bottom
+        background: $foot
+        text-align: center
+        font-size: 11px
+        line-height: 13px
+        letter-spacing: 0.846154px
+        color: $textw
+        padding: 22px 0
+        font-weight: 400
+    
 
 @media (max-width: 1024px)
     .footer
         &__signup
             flex-wrap: wrap
             justify-content: center
+
 @media (max-width: 525px)
     .footer
         &__title
